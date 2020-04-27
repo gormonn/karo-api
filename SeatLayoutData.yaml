@@ -1,0 +1,48 @@
+SeatLayoutData: (WSVistaWebClient.ServiceContracts.Theatre​, optional),
+ResponseCode: (integer, optional),
+ErrorDescription: (string, optional)
+
+Areas (Array[WSVistaWebClient.ServiceContracts.Area​], optional): Seating areas for the theatre ,
+AreaCategories (Array[WSVistaWebClient.ServiceContracts.AreaCategory​], optional): Details of area categories found in this theatre ,
+BoundaryRight (number, optional): The right of the seat boundary. No seats are left of this point (used for drawing seating UIs). ,
+BoundaryLeft (number, optional): The left of the seat boundary. No seats are left of this point (used for drawing seating UIs). ,
+BoundaryTop (number, optional): The top of the seat boundary. No seats are higher than this point (used for drawing seating UIs). ,
+ScreenStart (number, optional): The screens left position (used for drawing seating UIs). ,
+ScreenWidth (number, optional): The width of the screen (used for drawing seating UIs).
+
+Number (integer, optional): The unique number which identifies this area ,
+AreaCategoryCode (string, optional): The code of the area category which this area is associated with ,
+Description (string, optional): The name of the area ,
+DescriptionAlt (string, optional): The name of the area in the systems alternate language ,
+NumberOfSeats (integer, optional): The total number of seats in the area. ,
+IsAllocatedSeating (boolean, optional): Indicates whether or not allocated seating is enabled for this area. ,
+HasSofaSeatingEnabled (boolean, optional): Indicates whether or not sofa seating is enabled for this area. ,
+Left (number, optional): The left coordinate of the area (used for drawing seating UIs). ,
+Top (number, optional): The top position of the area (used for drawing seating UIs). ,
+Height (number, optional): The physical height of the area (used for drawing seating UIs). ,
+Width (number, optional): The physical width of the area (used for drawing seating UIs). ,
+Rows (Array[WSVistaWebClient.ServiceContracts.Row​], optional): The collection of rows in this area. ,
+RowCount (integer, optional): The number of rows in the area. ,
+ColumnCount (integer, optional): The number of columns in the area.
+
+AreaCategoryCode (string, optional): The unique code which identifies this area category ,
+SeatsToAllocate (integer, optional): The maximum number of seats which can be allocated in this area category (This is equal to SeatsAllocatedCount + SeatsNotAllocatedCount) ,
+SeatsAllocatedCount (integer, optional): The number of seats which have been allocated in this area category. This can be less than SeatsToAllocate which means there are seats which have not yet been allocated. ,
+SeatsNotAllocatedCount (integer, optional): The number of seats which have not yet been allocated ,
+SelectedSeats (Array[WSVistaWebClient.ServiceContracts.SeatPosition​], optional): A list of seat position definitions for which seats are selected in this area category ,
+IsInSeatDeliveryEnabled (boolean, optional): Specifies whether concession items can be delivered to seats in this area category
+
+PhysicalName (string, optional): The display name of the row. ,
+Seats (Array[WSVistaWebClient.ServiceContracts.Seat​], optional): The list of seats in this row.
+
+AreaNumber (integer, optional): The area which the seat is in. ,
+RowIndex (integer, optional): Index is 0-based and corresponds to the grid defined for the screen area. ,
+ColumnIndex (integer, optional): Index is 0-based and corresponds to the grid defined for the screen area.
+
+Position (WSVistaWebClient.ServiceContracts.SeatPosition​, optional): The position of the seat. ,
+Priority (integer, optional): The seat's priority. Seats are automatically allocated in order of ascending priority. Valid priority values are 1-9, or 0 if the seat is a special seat/priorities have not been returned. ,
+Id (string, optional): The seat display number/name. ,
+Status (integer, optional): The status of the seat. ['0: Empty','1: Sold','2: House','3: Special','4: Reserved','5: Broken','6: Placeholder','7: Companion'] ,
+SeatStyle (integer, optional): Defines the style of the seat (standalone vs sofa component) ['0: Normal','1: SofaLeft','2: SofaMiddle','3: SofaRight'] ,
+SeatsInGroup (Array[WSVistaWebClient.ServiceContracts.SeatPosition​], optional): A list of seats in this seats group. This is inclusive of the current seat. ,
+OriginalStatus (integer, optional): The original status of the seat. ['0: Empty','1: Sold','2: House','3: Special','4: Reserved','5: Broken','6: Placeholder','7: Companion']
