@@ -1,7 +1,3 @@
-SeatLayoutData: (WSVistaWebClient.ServiceContracts.Theatre​, optional),
-ResponseCode: (integer, optional),
-ErrorDescription: (string, optional)
-
 Areas (Array[WSVistaWebClient.ServiceContracts.Area​], optional): Seating areas for the theatre ,
 AreaCategories (Array[WSVistaWebClient.ServiceContracts.AreaCategory​], optional): Details of area categories found in this theatre ,
 BoundaryRight (number, optional): The right of the seat boundary. No seats are left of this point (used for drawing seating UIs). ,
