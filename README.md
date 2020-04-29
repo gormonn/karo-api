@@ -1,4 +1,5 @@
 # Оглавление
+* [Порядок запросов](#Порядок-запросов)
 * [Обзор мест](#Обзор-мест)
     * [Расположение экранов](##Расположение-экранов)
     * [Категории области](##Категории-области)
@@ -12,6 +13,9 @@
     * [GetSessionSeatPlan](##GetSessionSeatPlan)
     * [GetSessionSeatData](##GetSessionSeatData)
     * [AddTickets](##AddTickets)
+
+#Порядок запросов
+См. [Порядок запросов](http://testvistaweb.karofilm.ru/WSVistaWebClient/api-docs/creating-orders/order-overview) для заказа билетов.
 
 # Обзор мест
 [Ссылка на оригинал](http://testvistaweb.karofilm.ru/WSVistaWebClient/api-docs/seating/overview)
